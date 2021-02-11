@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia";
+}
+html {
+  background-color: #151515;
+  color: white;
+}
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151515;
+  color: whitesmoke;
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+.heading {
+  flex: 1;
+  text-align: center;
+}
+.add-button {
+  margin-right: 25px;
+}
+.close {
+  display: none;
+}
+.add-form {
+  color: white;
+  background-color: #1515158f;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2000;
+}
+.form-style {
+  width: 300px;
+  height: 400px;
+  background-color: #0953258f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 12px;
+  font-size: large;
+}
+.column {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+}
+.row {
+  width: 85%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  width: 98%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 8px;
+}
+.card-grid {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-gap: 15px;
+}
+.open-form {
+  height: 250px;
+  width: 180px;
+  font-size: 3em;
+  text-align: center;
+  transition: 0.5s;
+  border-radius: 12px;
+  outline-style: none;
+  outline: none;
+  border: 1px transparent;
+  box-shadow: 5px 5px springgreen;
+  background-color: rgba(0, 255, 128, 0.37);
+  color: white;
+  cursor: pointer;
+}
+.open-form:hover {
+  transform: scale(1.03);
+  outline-style: none;
+  outline: none;
+}
+.card-style {
+  width: 180px;
+  height: 250px;
+  border-radius: 12px;
+  font-size: larger;
+  border: 2px solid springgreen;
+  box-shadow: 5px 5px springgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s;
+}
+.card-style:hover {
+  transform: scale(1.03);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+}
+.switch-input {
+  display: none;
+}
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  user-select: none;
+}
+.switch-label::before,
+.switch-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.switch-label::before {
+  width: 100%;
+  height: 100%;
+  background-color: #dedede;
+  border-radius: 9999em;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+.switch-label::after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+  -webkit-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+}
+.switch-input:checked + .switch-label::before {
+  background-color: springgreen;
+}
+.switch-input:checked + .switch-label::after {
+  left: 24px;
+}
+.delete-button {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: #151515;
+  background-image: url("./trash.svg");
+}
+
+.add {
+  width: 95px;
+  height: 45px;
+  cursor: pointer;
+  color: white;
+  background-color: springgreen;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.close-form {
+  width: 95px;
+  height: 45px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}

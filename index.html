@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Logs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="close">
+      <div class="form-style">
+        <div class="column">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            required
+            name="title"
+            placeholder="Book-title"
+          />
+        </div>
+        <div class="column">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            id="author"
+            required
+            name="author"
+            placeholder="Author-name"
+          />
+        </div>
+        <div class="column">
+          <label for="pages">Pages</label>
+          <input
+            type="number"
+            id="pages"
+            name="pages"
+            required
+            placeholder="No.of Pages"
+          />
+        </div>
+        <label for="read">Completed?</label>
+        <div class="row switch">
+          <input
+            type="checkbox"
+            checked="false"
+            id="read"
+            name="read"
+            class="switch-input"
+          />
+          <label for="read" class="switch-label">Had read?</label>
+        </div>
+        <div class="row">
+          <button class="add" type="submit">Add Book</button>
+          <button class="close-form">Close form</button>
+        </div>
+      </div>
+    </div>
+    <nav class="nav">
+      <h2 class="heading">Book - Library</h2>
+    </nav>
+    <div class="card-grid">
+      <button class="open-form">Add New</button>
+    </div>
+    <div class="all-books"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
